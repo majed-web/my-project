@@ -1,0 +1,184 @@
+body{
+    background: rgb(0, 0, 0);
+    border: 1px;
+    
+}
+span{
+    color: red;
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    color: rgb(241, 200, 200);
+}
+nav{
+    margin-top: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li {
+    list-style-type: square;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+}
+nav ul li a {
+    color: rgb(248, 248, 250);
+    font-style: oblique;
+    background-color: rgba(255, 0, 0, 0.925);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.4s;
+}
+nav ul li a:hover {
+    color: #000;
+    font-size: xx-large;    
+}
+.btn {
+    background-color: rgb(255, 250, 250);
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.85rem 0.92rem;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+.btn:hover {
+    background-color: transparent;
+    border: 2px solid rgb(153, 151, 151);
+}
+
+.home{
+    font-size: 30px;
+    color: rgb(187, 13, 13);
+}
+.M{
+    font-size: 20px;
+    color: rgb(26, 48, 65);
+    padding-left: 20px;
+    margin-top: 9px;
+    letter-spacing: 1.4px;
+    line-height: 30px;
+}
+.M,p{
+    color: rgb(193, 210, 230)
+}
+#imgae{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+    display: inline-block;
+}
+#imgae img{
+    width: 45px;
+}
+img :hover{
+    text-decoration: solid;
+    font-size: xx-large;
+    display: inline;
+    transform: matrix3d(x y z);
+}
+summary{
+    color: aliceblue;
+    font-size: larger;
+}
+image p{
+    color: rgb(106, 201, 201);
+}
+.form{
+    margin-left: -30px;
+    width: 250px;
+    height: 400px;
+    background: linear-gradient(to top,rgba(46, 10, 10, 0.8)50%,rgba(46, 10, 10, 0.8)50%);
+    position: absolute;
+    top: 420pxpx;
+    left: 50px;
+    border-radius: 10px;
+    padding: 25px;
+    display: block;
+}
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: rgb(187, 13, 13);
+    font-size: 22px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+.form input{
+    width: 240px;
+    height: 40px;
+    background: transparent;
+    border-bottom: 1px solid rgb(187, 13, 13);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+.form input :focus{
+    outline: none;
+}
+::placeholder{
+    color: white;
+    font-family: Arial;
+}
+.bt{
+    width: 240px;
+    height: 40px;
+    background: rgb(187, 13, 13);
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: 0.4s ease;
+}
+.bt:hover{
+    background: white;
+    color: rgb(187, 13, 13);
+}
+.bt a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+.form .link a{
+    text-decoration: none;
+    color: rgb(187, 13, 13);
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+icons{
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+}
+
+@media screen and (max-width: 1200px)
+{
+    .main{
+        padding-left: 20px;
+        height: 160vh;
+    }
+
+}

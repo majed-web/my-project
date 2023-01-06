@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>communicate</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            background-color: rgb(221, 229, 231);
+            width: 100%;
+            height: 50%;
+        }
+        form{
+            width: 600px;
+            height: 380px;
+            padding: 10px;
+            margin: auto;
+            background-color: rgb(16, 153, 207);
+            font-size: 20px;
+        }
+        .me{
+            margin-top: 15px;
+            padding: 10px;
+            width: 50%;
+        }
+        .send{
+            margin: 10px;
+        }
+        .btn{
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: auto;
+            border: 5px;
+            border-radius: 1.3rem;
+            border-color: aqua;
+        }
+        h2{
+            color: rgb(85, 19, 19);
+            font-size: 30px;
+            margin-left: 50px;
+            padding-left: 17px;
+            display: flex;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="post">
+        <div class="me">
+            Your Name :
+            <input type="text" name="name" placeholder="Yore Name"><br><br>
+            Emale :
+            <input type="email" placeholder="Yore Email">
+        </div>
+        leave your message:<br>
+        <textarea name="sms" required="no filed" id="com" cols="80" rows="10" placeholder="put the comment here"></textarea><br>
+        <div class="send">
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </div>
+    </form>
+    <div class="btn">
+        <h2>This The next for find the factorial :</h2>
+        <form action="#" method="get">
+            Number :
+            <input type="text" name="firstnum" value="">
+            <br>
+            Factorial :
+            <input type="text" name="output" value="">
+            <br>
+            <input type="button" name="button" value="get the factorial"
+            onclick="myfun(this.form)">
+
+        </form>
+    </div>
+    <script>
+        var i = 1;
+        var fact = 1;
+        function myfun(form){
+            var num =form.firstnum.value;
+            while(i<=num){
+                fact = fact*i;
+                i++;
+            }
+            form.output.value =fact;
+        }
+    </script>
+</body>
+</html>
